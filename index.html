@@ -36,23 +36,8 @@
             padding: 15px;
             background-color: #111;
             font-size: 0.9em;
-        }
-
-        .typing {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 6s steps(60, end), blink 0.75s step-end infinite;
-            border-right: 2px solid lime;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink {
-            50% { border-color: transparent }
+            white-space: normal;
+            overflow-wrap: break-word;
         }
 
         .fake-button {
@@ -71,15 +56,14 @@
     <div class="danger">🚨 ALERTA: VAZAMENTO DETECTADO! 🚨</div>
 
     <div class="terminal">
-        <div class="typing">
-            Conectando a servidores globais...<br>
-            Vazamento em: EUA, Brasil, China...<br>
-            Extraindo dados...<br>
-            CPF: 043.351.866-90<br>
-            Nome: Denilson Francisco Batista<br>
-            Banco: Caixa Econômica<br>
-            PIX em processamento R$500,00... 100%
-        </div>
+        Conectando a servidores globais...<br>
+        Vazamento em: EUA, Brasil, China, Rússia, Alemanha...<br>
+        Extraindo dados de localização, histórico, e apps usados...<br>
+        Rastreamento ativo. Não feche esta aba.<br>
+        Coletando CPF: 043.351.866-90<br>
+        Coletando Nome: Denilson Francisco Batista<br>
+        Dados Bancários: Caixa Econômica Federal<br>
+        PIX em processamento: R$500,00... 100%
     </div>
 
     <button class="fake-button" onclick="alert('Muito tarde... seus dados já foram enviados 😈')">
